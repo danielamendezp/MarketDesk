@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="140" FechaEmision="3/12/2023 12:00:47" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Maria Hernandez" Identificación="2-0888-0888" Email="mendez.daniela1199@gmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Aceite Vegetal En su Punto - 450mL" Cantidad="1" PrecioUnitario="800" PrecioTotal="800" />
+    <SubTotal>800</SubTotal>
+    <Impuestos>8</Impuestos>
+    <Descuentos>0</Descuentos>
+    <Total>800</Total>
+  </Productos>
+</MarketDesk>

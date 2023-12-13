@@ -1,0 +1,569 @@
+[
+        {
+            "id": 1,
+            "codigo": "101",
+            "canton": "San José",
+            "coordenadas": "9.9280694, -84.0907246",
+            "provincia_id": 1
+        },
+        {
+            "id": 2,
+            "codigo": "102",
+            "canton": "Escazú",
+            "coordenadas": "9.920695, -84.14615189999999",
+            "provincia_id": 1
+        },
+        {
+            "id": 3,
+            "codigo": "103",
+            "canton": "Desamparados",
+            "coordenadas": "9.8969706, -84.0616709",
+            "provincia_id": 1
+        },
+        {
+            "id": 4,
+            "codigo": "104",
+            "canton": "Puriscal",
+            "coordenadas": "9.832137, -84.3331694",
+            "provincia_id": 1
+        },
+        {
+            "id": 5,
+            "codigo": "105",
+            "canton": "Tarrazú",
+            "coordenadas": "9.6051515, -84.0378894",
+            "provincia_id": 1
+        },
+        {
+            "id": 6,
+            "codigo": "106",
+            "canton": "Aserrí",
+            "coordenadas": "9.8641706, -84.0933652",
+            "provincia_id": 1
+        },
+        {
+            "id": 7,
+            "codigo": "107",
+            "canton": "Mora",
+            "coordenadas": "9.9323988, -84.080052",
+            "provincia_id": 1
+        },
+        {
+            "id": 8,
+            "codigo": "108",
+            "canton": "Goicoechea",
+            "coordenadas": "9.9546686, -84.02202980000001",
+            "provincia_id": 1
+        },
+        {
+            "id": 9,
+            "codigo": "109",
+            "canton": "Santa Ana",
+            "coordenadas": "9.9312697, -84.1820735",
+            "provincia_id": 1
+        },
+        {
+            "id": 10,
+            "codigo": "110",
+            "canton": "Alajuelita",
+            "coordenadas": "9.901608, -84.09947",
+            "provincia_id": 1
+        },
+        {
+            "id": 11,
+            "codigo": "111",
+            "canton": "Vázquez De Coronado",
+            "coordenadas": "9.9929583",
+            "provincia_id": 1
+        },
+        {
+            "id": 12,
+            "codigo": "112",
+            "canton": "Acosta",
+            "coordenadas": "9.8000005, -84.1580225",
+            "provincia_id": 1
+        },
+        {
+            "id": 13,
+            "codigo": "113",
+            "canton": "Tibás",
+            "coordenadas": "9.957617599999999, -84.08161229999999",
+            "provincia_id": 1
+        },
+        {
+            "id": 14,
+            "codigo": "114",
+            "canton": "Moravia",
+            "coordenadas": "10.0101333, -84.01145439999999",
+            "provincia_id": 1
+        },
+        {
+            "id": 15,
+            "codigo": "115",
+            "canton": "Montes De Oca",
+            "coordenadas": "9.940807699999999, -84.02467329999999",
+            "provincia_id": 1
+        },
+        {
+            "id": 16,
+            "codigo": "116",
+            "canton": "Turrubares",
+            "coordenadas": "9.909000800000001, -84.4408972",
+            "provincia_id": 1
+        },
+        {
+            "id": 17,
+            "codigo": "117",
+            "canton": "Dota",
+            "coordenadas": "9.5586413, -83.91089680000002",
+            "provincia_id": 1
+        },
+        {
+            "id": 18,
+            "codigo": "118",
+            "canton": "Curridabat",
+            "coordenadas": "9.914550499999999, -84.0386633",
+            "provincia_id": 1
+        },
+        {
+            "id": 19,
+            "codigo": "119",
+            "canton": "Pérez Zeledón",
+            "coordenadas": "9.35473, -83.63484299999999",
+            "provincia_id": 1
+        },
+        {
+            "id": 20,
+            "codigo": "120",
+            "canton": "León Cortés Castro",
+            "coordenadas": "9.9358568, -84.098524",
+            "provincia_id": 1
+        },
+        {
+            "id": 21,
+            "codigo": "201",
+            "canton": "Alajuela",
+            "coordenadas": "10.0159394, -84.21417009999999",
+            "provincia_id": 2
+        },
+        {
+            "id": 22,
+            "codigo": "202",
+            "canton": "San Ramón",
+            "coordenadas": "10.0910284, -84.4703933",
+            "provincia_id": 2
+        },
+        {
+            "id": 23,
+            "codigo": "203",
+            "canton": "Grecia",
+            "coordenadas": "10.0731003, -84.3122803",
+            "provincia_id": 2
+        },
+        {
+            "id": 24,
+            "codigo": "204",
+            "canton": "San Mateo",
+            "coordenadas": "9.941030099999999, -84.5274616",
+            "provincia_id": 2
+        },
+        {
+            "id": 25,
+            "codigo": "205",
+            "canton": "Atenas",
+            "coordenadas": "9.9784936, -84.3738394",
+            "provincia_id": 2
+        },
+        {
+            "id": 26,
+            "codigo": "206",
+            "canton": "Naranjo",
+            "coordenadas": "10.0974116, -84.3831166",
+            "provincia_id": 2
+        },
+        {
+            "id": 27,
+            "codigo": "207",
+            "canton": "Palmares",
+            "coordenadas": "10.060727, -84.4378495",
+            "provincia_id": 2
+        },
+        {
+            "id": 28,
+            "codigo": "208",
+            "canton": "Poás",
+            "coordenadas": "10.07124, -84.24655899999999",
+            "provincia_id": 2
+        },
+        {
+            "id": 29,
+            "codigo": "209",
+            "canton": "Orotina",
+            "coordenadas": "9.9120206, -84.5194688",
+            "provincia_id": 2
+        },
+        {
+            "id": 30,
+            "codigo": "210",
+            "canton": "San Carlos",
+            "coordenadas": "10.6590277, -84.3542049",
+            "provincia_id": 2
+        },
+        {
+            "id": 31,
+            "codigo": "211",
+            "canton": "Alfaro Ruiz (Zarcero)",
+            "coordenadas": "10.1864136, -84.39189739999999",
+            "provincia_id": 2
+        },
+        {
+            "id": 32,
+            "codigo": "212",
+            "canton": "Valverde Vega",
+            "coordenadas": "10.2325284, -84.2910759",
+            "provincia_id": 2
+        },
+        {
+            "id": 33,
+            "codigo": "213",
+            "canton": "Upala",
+            "coordenadas": "10.8979462, -85.0155499",
+            "provincia_id": 2
+        },
+        {
+            "id": 34,
+            "codigo": "214",
+            "canton": "Los Chiles",
+            "coordenadas": "11.0336891, -84.71326959999999",
+            "provincia_id": 2
+        },
+        {
+            "id": 35,
+            "codigo": "215",
+            "canton": "Guatuso",
+            "coordenadas": "10.7118987, -84.8150781",
+            "provincia_id": 2
+        },
+        {
+            "id": 36,
+            "codigo": "301",
+            "canton": "Cartago",
+            "coordenadas": "9.8638091, -83.91619349999999",
+            "provincia_id": 3
+        },
+        {
+            "id": 37,
+            "codigo": "302",
+            "canton": "Paraíso",
+            "coordenadas": "9.839214, -83.8664076",
+            "provincia_id": 3
+        },
+        {
+            "id": 38,
+            "codigo": "303",
+            "canton": "La Unión",
+            "coordenadas": "9.9060735, -83.9880863",
+            "provincia_id": 3
+        },
+        {
+            "id": 39,
+            "codigo": "304",
+            "canton": "Jiménez",
+            "coordenadas": "10.1672961, -83.7730237",
+            "provincia_id": 3
+        },
+        {
+            "id": 40,
+            "codigo": "305",
+            "canton": "Turrialba",
+            "coordenadas": "9.9067054, -83.6800512",
+            "provincia_id": 3
+        },
+        {
+            "id": 41,
+            "codigo": "306",
+            "canton": "Alvarado",
+            "coordenadas": "9.916195, -83.8095774",
+            "provincia_id": 3
+        },
+        {
+            "id": 42,
+            "codigo": "307",
+            "canton": "Oreamuno",
+            "coordenadas": "9.866349, -83.902951",
+            "provincia_id": 3
+        },
+        {
+            "id": 43,
+            "codigo": "308",
+            "canton": "El guarco",
+            "coordenadas": "9.8448839, -83.9453168",
+            "provincia_id": 3
+        },
+        {
+            "id": 44,
+            "codigo": "401",
+            "canton": "Heredia",
+            "coordenadas": "9.9981413, -84.1197643",
+            "provincia_id": 4
+        },
+        {
+            "id": 45,
+            "codigo": "402",
+            "canton": "Barva",
+            "coordenadas": "10.0190909, -84.1237232",
+            "provincia_id": 4
+        },
+        {
+            "id": 46,
+            "codigo": "403",
+            "canton": "Santo Domingo",
+            "coordenadas": "9.980723399999999, -84.0909289",
+            "provincia_id": 4
+        },
+        {
+            "id": 47,
+            "codigo": "404",
+            "canton": "Santa Barbara",
+            "coordenadas": "10.0371501, -84.15833789999999",
+            "provincia_id": 4
+        },
+        {
+            "id": 48,
+            "codigo": "405",
+            "canton": "San Rafael",
+            "coordenadas": "10.0144716, -84.0986459",
+            "provincia_id": 4
+        },
+        {
+            "id": 49,
+            "codigo": "406",
+            "canton": "San Isidro",
+            "coordenadas": "10.0182399, -84.055129",
+            "provincia_id": 4
+        },
+        {
+            "id": 50,
+            "codigo": "407",
+            "canton": "Belén",
+            "coordenadas": "9.979719099999999, -84.1804384",
+            "provincia_id": 4
+        },
+        {
+            "id": 51,
+            "codigo": "408",
+            "canton": "Flores",
+            "coordenadas": "10.0016198, -84.1593413",
+            "provincia_id": 4
+        },
+        {
+            "id": 52,
+            "codigo": "409",
+            "canton": "San Pablo",
+            "coordenadas": "9.9968342, -84.09633409999999",
+            "provincia_id": 4
+        },
+        {
+            "id": 53,
+            "codigo": "410",
+            "canton": "Sarapiquí",
+            "coordenadas": "10.4539873, -84.01938609999999",
+            "provincia_id": 4
+        },
+        {
+            "id": 54,
+            "codigo": "501",
+            "canton": "Liberia",
+            "coordenadas": "10.6345964, -85.4406747",
+            "provincia_id": 5
+        },
+        {
+            "id": 55,
+            "codigo": "502",
+            "canton": "Nicoya",
+            "coordenadas": "10.1445678, -85.4530295",
+            "provincia_id": 5
+        },
+        {
+            "id": 56,
+            "codigo": "503",
+            "canton": "Santa Cruz",
+            "coordenadas": "10.2609675, -85.5843632",
+            "provincia_id": 5
+        },
+        {
+            "id": 57,
+            "codigo": "504",
+            "canton": "Bagaces",
+            "coordenadas": "10.5251574, -85.254136",
+            "provincia_id": 5
+        },
+        {
+            "id": 58,
+            "codigo": "505",
+            "canton": "Carrillo",
+            "coordenadas": "9.868858, -85.48138349999999",
+            "provincia_id": 5
+        },
+        {
+            "id": 59,
+            "codigo": "506",
+            "canton": "Cañas",
+            "coordenadas": "10.4274414, -85.09346239999999",
+            "provincia_id": 5
+        },
+        {
+            "id": 60,
+            "codigo": "507",
+            "canton": "Abangares",
+            "coordenadas": "10.15336, -85.043663",
+            "provincia_id": 5
+        },
+        {
+            "id": 61,
+            "codigo": "508",
+            "canton": "Tilarán",
+            "coordenadas": "10.4563619, -84.9713512",
+            "provincia_id": 5
+        },
+        {
+            "id": 62,
+            "codigo": "509",
+            "canton": "Nandayure",
+            "coordenadas": "9.9903778, -85.2521952",
+            "provincia_id": 5
+        },
+        {
+            "id": 63,
+            "codigo": "510",
+            "canton": "La Cruz",
+            "coordenadas": "11.0708272, -85.6306396",
+            "provincia_id": 5
+        },
+        {
+            "id": 64,
+            "codigo": "511",
+            "canton": "Hojancha",
+            "coordenadas": "10.057561, -85.41950109999999",
+            "provincia_id": 5
+        },
+        {
+            "id": 65,
+            "codigo": "601",
+            "canton": "Puntarenas",
+            "coordenadas": "9.9778439, -84.82942109999999",
+            "provincia_id": 6
+        },
+        {
+            "id": 66,
+            "codigo": "602",
+            "canton": "Esparza",
+            "coordenadas": "9.9906919, -84.667374",
+            "provincia_id": 6
+        },
+        {
+            "id": 67,
+            "codigo": "603",
+            "canton": "Buenos Aires",
+            "coordenadas": "9.1672952, -83.3308421",
+            "provincia_id": 6
+        },
+        {
+            "id": 68,
+            "codigo": "604",
+            "canton": "Montes De Oro",
+            "coordenadas": "10.0529075, -84.7289442",
+            "provincia_id": 6
+        },
+        {
+            "id": 69,
+            "codigo": "605",
+            "canton": "Osa",
+            "coordenadas": "8.560906, -83.46435509999999",
+            "provincia_id": 6
+        },
+        {
+            "id": 70,
+            "codigo": "606",
+            "canton": "Quepos",
+            "coordenadas": "9.431868099999999, -84.16190759999999",
+            "provincia_id": 6
+        },
+        {
+            "id": 71,
+            "codigo": "607",
+            "canton": "Golfito",
+            "coordenadas": "8.6040618, -83.1133792",
+            "provincia_id": 6
+        },
+        {
+            "id": 72,
+            "codigo": "608",
+            "canton": "Coto Brus",
+            "coordenadas": "8.954044999999999, -83.070404",
+            "provincia_id": 6
+        },
+        {
+            "id": 73,
+            "codigo": "609",
+            "canton": "Parrita",
+            "coordenadas": "9.518638100000002, -84.33053939999999",
+            "provincia_id": 6
+        },
+        {
+            "id": 74,
+            "codigo": "610",
+            "canton": "Corredores",
+            "coordenadas": "8.551894599999999, -82.95015579999999",
+            "provincia_id": 6
+        },
+        {
+            "id": 75,
+            "codigo": "611",
+            "canton": "Garabito",
+            "coordenadas": "9.9778439, -84.82942109999999",
+            "provincia_id": 6
+        },
+        {
+            "id": 76,
+            "codigo": "701",
+            "canton": "Limón",
+            "coordenadas": "9.9913106, -83.04150779999999",
+            "provincia_id": 7
+        },
+        {
+            "id": 77,
+            "codigo": "702",
+            "canton": "Pococí",
+            "coordenadas": "10.4230878, -83.7199136",
+            "provincia_id": 7
+        },
+        {
+            "id": 78,
+            "codigo": "703",
+            "canton": "Siquirres",
+            "coordenadas": "10.0981388, -83.5096859",
+            "provincia_id": 7
+        },
+        {
+            "id": 79,
+            "codigo": "704",
+            "canton": "Talamanca",
+            "coordenadas": "9.6540146, -82.75494119999999",
+            "provincia_id": 7
+        },
+        {
+            "id": 80,
+            "codigo": "705",
+            "canton": "Matina",
+            "coordenadas": "10.0770702, -83.29073389999999",
+            "provincia_id": 7
+        },
+        {
+            "id": 81,
+            "codigo": "706",
+            "canton": "Guácimo",
+            "coordenadas": "10.2127003, -83.6866091",
+            "provincia_id": 7
+        }
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="102" FechaEmision="1/12/2023 10:25:00" />
+  <Negocio>2-0789-0745</Negocio>
+  <Cliente Nombre="Sebastian Montero" Identificación="2-0759-0743">8848-4854</Cliente>
+  <Productos>
+    <SubTotal>56200</SubTotal>
+    <Impuestos>1603,6</Impuestos>
+    <Descuentos>11240</Descuentos>
+    <Total>44960</Total>
+    <Producto DetalledelProducto="Alitas de Pollo Empacadas Don Cristobal, Precio por Kilo" Cantidad="2" PrecioUnitario="4340" PrecioTotal="8680" />
+    <Producto DetalledelProducto="Aceite De Soya Clover -  900mL" Cantidad="33" PrecioUnitario="1440" PrecioTotal="47520" />
+    <PromocionesAplicadas>Por una compra mayor a 50000 te aplicamos un 20% de descuento</PromocionesAplicadas>
+  </Productos>
+</MarketDesk>

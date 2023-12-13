@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="106" FechaEmision="1/12/2023 10:59:03" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Maria Hernandez" Identificación="2-0888-0888">8848-4854</Cliente>
+  <Productos>
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="5" PrecioUnitario="1440" PrecioTotal="7200" />
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="5" PrecioUnitario="3650" PrecioTotal="18250" />
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <SubTotal>25450</SubTotal>
+    <Impuestos>254,5</Impuestos>
+    <Descuentos>7635</Descuentos>
+    <Total>17815</Total>
+  </Productos>
+</MarketDesk>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="153" FechaEmision="4/12/2023 21:07:42" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Pedro Pascal" Identificación="2-5665-4654" Email="danii0399@hotmail.com" Celular="1231-2313" />
+  <Productos>
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="2" PrecioUnitario="3650" PrecioTotal="7300" />
+    <Producto Producto="Alitas de Pollo Empacadas Don Cristobal, Precio por Kilo" Cantidad="2" PrecioUnitario="4340" PrecioTotal="8680" />
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="2" PrecioUnitario="1440" PrecioTotal="2880" />
+    <Producto Producto="Azúcar Crudo Zukra - 2kg" Cantidad="2" PrecioUnitario="1820" PrecioTotal="3640" />
+    <Producto Producto="Café 1% Arábica - Orgánico Bajo Sombra - Café Britt - 340g" Cantidad="2" PrecioUnitario="5750" PrecioTotal="11500" />
+    <Promociones>Por la compra de dos Arroz Luisiana te regalamos un Aceite Clover</Promociones>
+    <Promociones>Por una compra mayor a 50000 te aplicamos un 20% de descuento</Promociones>
+    <SubTotal>34000</SubTotal>
+    <Impuestos>2761,6</Impuestos>
+    <Descuentos>8240</Descuentos>
+    <Total>25760</Total>
+    <SubTotalUSD>64,1122341227938</SubTotalUSD>
+    <ImpuestosUSD>5,20742193392669</ImpuestosUSD>
+    <DescuentosUSD>15,5377885050536</DescuentosUSD>
+    <TotalUSD>48,5744456177402</TotalUSD>
+  </Productos>
+</MarketDesk>

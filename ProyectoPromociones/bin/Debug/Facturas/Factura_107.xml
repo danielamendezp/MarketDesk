@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="107" FechaEmision="1/12/2023 11:14:06" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Maria Hernandez" Identificación="2-0888-0888">8848-4854</Cliente>
+  <Productos>
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="3" PrecioUnitario="3650" PrecioTotal="10950" />
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <SubTotal>10950</SubTotal>
+    <Impuestos>109,5</Impuestos>
+    <Descuentos>3285</Descuentos>
+    <Total>7665</Total>
+  </Productos>
+</MarketDesk>

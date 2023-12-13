@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="148" FechaEmision="4/12/2023 18:49:13" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Maria Hernandez" Identificación="2-0888-0888" Email="mendez.daniela1199@gmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Aceite Vegetal En su Punto - 450mL" Cantidad="5" PrecioUnitario="800" PrecioTotal="4000" />
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <SubTotal>4000</SubTotal>
+    <Impuestos>40</Impuestos>
+    <Descuentos>1200</Descuentos>
+    <Total>2800</Total>
+    <SubTotalUSD>7,54261577915221</SubTotalUSD>
+    <ImpuestosUSD>0,0754261577915221</ImpuestosUSD>
+    <DescuentosUSD>2,26278473374566</DescuentosUSD>
+    <TotalUSD>5,27983104540655</TotalUSD>
+  </Productos>
+</MarketDesk>

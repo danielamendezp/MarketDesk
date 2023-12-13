@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CE10EFA-F8A3-466C-8AE4-65F80F752295}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoPromociones</RootNamespace>
+    <AssemblyName>ProyectoPromociones</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\HarfBuzzSharp.7.3.0\lib\net462\HarfBuzzSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.bouncy-castle-connector, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.bouncy-castle-connector.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.commons.8.0.2\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.html2pdf, Version=5.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.pdfhtml.5.0.2\lib\net461\itext.html2pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=8.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.8.0.2\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.5.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.0.1\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QuestPDF, Version=2023.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QuestPDF.2023.12.0\lib\netstandard2.0\QuestPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.2.88.6\lib\net462\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.HarfBuzz, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.HarfBuzz.2.88.6\lib\net462\SkiaSharp.HarfBuzz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.1.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.0.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Tracing.4.1.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.0.1\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.1.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.1.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.0.1\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.0.1\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.1.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.1.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net.Http, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.1.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.1.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reflection.TypeExtensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.TypeExtensions.4.3.0\lib\net462\System.Reflection.TypeExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.1.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.0.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.1.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.0.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestStack.BDDfy, Version=4.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestStack.BDDfy.4.3.2\lib\net40\TestStack.BDDfy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLLAddress.cs" />
+    <Compile Include="BLL\BLLPromotion.cs" />
+    <Compile Include="BLL\BLLUsser.cs" />
+    <Compile Include="BLL\BLLSupplier.cs" />
+    <Compile Include="BLL\BLLProduct.cs" />
+    <Compile Include="BLL\BLLPayment.cs" />
+    <Compile Include="BLL\BLLHeader.cs" />
+    <Compile Include="BLL\BLLDetail.cs" />
+    <Compile Include="BLL\BLLBusiness.cs" />
+    <Compile Include="BLL\BLLCustomer.cs" />
+    <Compile Include="BLL\BLLCategory.cs" />
+    <Compile Include="Connected Services\BCCR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DALAddress.cs" />
+    <Compile Include="DAL\DALPromotion.cs" />
+    <Compile Include="DAL\DALProduct.cs" />
+    <Compile Include="DAL\DALUsser.cs" />
+    <Compile Include="DAL\DALPayment.cs" />
+    <Compile Include="DAL\DALHeader.cs" />
+    <Compile Include="DAL\DALDetail.cs" />
+    <Compile Include="DAL\DALBusiness.cs" />
+    <Compile Include="DAL\DALSupplier.cs" />
+    <Compile Include="DAL\DALCategory.cs" />
+    <Compile Include="DAL\DALCustomer.cs" />
+    <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\Cantones.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Business.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Detail.cs" />
+    <Compile Include="Entities\Distritos.cs" />
+    <Compile Include="Entities\Dolar.cs" />
+    <Compile Include="Entities\Header.cs" />
+    <Compile Include="Entities\Invoice.cs" />
+    <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Promotion.cs" />
+    <Compile Include="Entities\Provincias.cs" />
+    <Compile Include="Entities\ServiceBCCR.cs" />
+    <Compile Include="Entities\Supplier.cs" />
+    <Compile Include="Entities\Usser.cs" />
+    <Compile Include="Enum\EUser.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Layers\BLL\IBLLAddress.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLPromotion.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLPayment.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLHeader.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLDetail.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLUsser.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLProduct.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLSupplier.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLCategory.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLBusiness.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALAddress.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALPromotion.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALUsser.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALSupplier.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALProduct.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALPayment.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALHeader.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALDetail.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALBusiness.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALCustomer.cs" />
+    <Compile Include="Interface\ICardType.cs" />
+    <Compile Include="Interface\Layers\BLL\IBLLCustomer.cs" />
+    <Compile Include="Interface\Layers\DAL\IDALCategory.cs" />
+    <Compile Include="Interface\PayCard.cs" />
+    <Compile Include="Patrones\FacadeAddress.cs" />
+    <Compile Include="Patrones\FacadeInvoice.cs" />
+    <Compile Include="Patrones\FactoryBuy.cs" />
+    <Compile Include="Patrones\FactoryMaintenanceVisualize.cs" />
+    <Compile Include="Patrones\FactoryMaintenanceDelete.cs" />
+    <Compile Include="Patrones\FactoryMaintenanceUpdate.cs" />
+    <Compile Include="Patrones\FactoryMaintenanceCreate.cs" />
+    <Compile Include="Patrones\FactoryPromotion.cs" />
+    <Compile Include="Persistencia\InvoicePersistencia.cs" />
+    <Compile Include="Persistencia\DataBase.cs" />
+    <Compile Include="Persistencia\FactoryConexion.cs" />
+    <Compile Include="Persistencia\FactoryDataBase.cs" />
+    <Compile Include="Persistencia\IDataBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UI\DataSetPromo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPromo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSetPromociones.cs">
+      <DependentUpon>DataSetPromociones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSetPromociones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPromociones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSetVentas.cs">
+      <DependentUpon>DataSetVentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSetVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetVentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSetVentasTotalsd.cs">
+      <DependentUpon>DataSetVentasTotalsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSetVentasTotalsd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetVentasTotalsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIBusiness.Designer.cs">
+      <DependentUpon>UIBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIBuy.Designer.cs">
+      <DependentUpon>UIBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIInvoice.Designer.cs">
+      <DependentUpon>UIInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIInvoiceCancelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIInvoiceCancelation.Designer.cs">
+      <DependentUpon>UIInvoiceCancelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIMantPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIMantPagos.Designer.cs">
+      <DependentUpon>UIMantPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIPayment.Designer.cs">
+      <DependentUpon>UIPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UILoginUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UILoginUsers.Designer.cs">
+      <DependentUpon>UILoginUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIMantCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIMantCategory.Designer.cs">
+      <DependentUpon>UIMantCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIMantProductInInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIMantProductInInventory.Designer.cs">
+      <DependentUpon>UIMantProductInInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIMantSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIMantSupplier.Designer.cs">
+      <DependentUpon>UIMantSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIPromotion.Designer.cs">
+      <DependentUpon>UIPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIPromotionGift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIPromotionGift.Designer.cs">
+      <DependentUpon>UIPromotionGift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIReport.Designer.cs">
+      <DependentUpon>UIReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIReporteVentasDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIReporteVentasDia.Designer.cs">
+      <DependentUpon>UIReporteVentasDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIReporteVentasTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIReporteVentasTotal.Designer.cs">
+      <DependentUpon>UIReporteVentasTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIReportVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIReportVentas.Designer.cs">
+      <DependentUpon>UIReportVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIUpdatePromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UIUpdatePromotion.Designer.cs">
+      <DependentUpon>UIUpdatePromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\StackRuta.cs" />
+    <Compile Include="Util\Stack.cs" />
+    <Compile Include="Util\Cryptography.cs" />
+    <Compile Include="Util\CustomException.cs" />
+    <Compile Include="Util\JSONGeneric.cs" />
+    <Compile Include="Util\QuickResponse.cs" />
+    <Compile Include="Util\UtilError.cs" />
+    <Compile Include="Util\Utilities.cs" />
+    <Compile Include="Util\Utils.cs" />
+    <EmbeddedResource Include="UI\ReportePromociones.rdlc" />
+    <EmbeddedResource Include="UI\ReportePromocionesV2.rdlc" />
+    <EmbeddedResource Include="UI\ReporteVentaFecha.rdlc" />
+    <EmbeddedResource Include="UI\ReporteVentasDia.rdlc" />
+    <EmbeddedResource Include="UI\ReportPROMOSV3.rdlc" />
+    <EmbeddedResource Include="UI\ReportVenta.rdlc" />
+    <EmbeddedResource Include="UI\ReportVentasV3.rdlc" />
+    <EmbeddedResource Include="UI\UIBusiness.resx">
+      <DependentUpon>UIBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIBuy.resx">
+      <DependentUpon>UIBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIInvoice.resx">
+      <DependentUpon>UIInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIInvoiceCancelation.resx">
+      <DependentUpon>UIInvoiceCancelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIMantPagos.resx">
+      <DependentUpon>UIMantPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIPayment.resx">
+      <DependentUpon>UIPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UILoginUsers.resx">
+      <DependentUpon>UILoginUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="UI\UICustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UICustomer.Designer.cs">
+      <DependentUpon>UICustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UICreateUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UICreateUpdateUser.Designer.cs">
+      <DependentUpon>UICreateUpdateUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\UICustomer.resx">
+      <DependentUpon>UICustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UICreateUpdateUser.resx">
+      <DependentUpon>UICreateUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIMantCategory.resx">
+      <DependentUpon>UIMantCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIMantProductInInventory.resx">
+      <DependentUpon>UIMantProductInInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIMantSupplier.resx">
+      <DependentUpon>UIMantSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIPromotion.resx">
+      <DependentUpon>UIPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIPromotionGift.resx">
+      <DependentUpon>UIPromotionGift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIReport.resx">
+      <DependentUpon>UIReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIReporteVentasDia.resx">
+      <DependentUpon>UIReporteVentasDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIReporteVentasTotal.resx">
+      <DependentUpon>UIReporteVentasTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIReportVentas.resx">
+      <DependentUpon>UIReportVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UIUpdatePromotion.resx">
+      <DependentUpon>UIUpdatePromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\BCCR\wsindicadoreseconomicos.wsdl" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Address.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Business.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Cantones.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Category.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Detail.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Distritos.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Header.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Invoice.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Payment.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Product.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Promotion.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Provincias.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Supplier.datasource" />
+    <None Include="Properties\DataSources\ProyectoPromociones.Entities.Usser.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ProvinciasCostaRica\cantonesCopy.json" />
+    <None Include="ProvinciasCostaRica\cantones.json" />
+    <None Include="ProvinciasCostaRica\distritos.json" />
+    <None Include="ProvinciasCostaRica\provincias.json" />
+    <None Include="UI\DataSetPromo.xsc">
+      <DependentUpon>DataSetPromo.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetPromo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPromo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\DataSetPromo.xss">
+      <DependentUpon>DataSetPromo.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetPromociones.xsc">
+      <DependentUpon>DataSetPromociones.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetPromociones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPromociones.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\DataSetPromociones.xss">
+      <DependentUpon>DataSetPromociones.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetVentas.xsc">
+      <DependentUpon>DataSetVentas.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetVentas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetVentas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\DataSetVentas.xss">
+      <DependentUpon>DataSetVentas.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetVentasTotalsd.xsc">
+      <DependentUpon>DataSetVentasTotalsd.xsd</DependentUpon>
+    </None>
+    <None Include="UI\DataSetVentasTotalsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetVentasTotalsd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\DataSetVentasTotalsd.xss">
+      <DependentUpon>DataSetVentasTotalsd.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\BCCR\wsindicadoreseconomicos.disco" />
+    <None Include="Connected Services\BCCR\configuration91.svcinfo" />
+    <None Include="Connected Services\BCCR\configuration.svcinfo" />
+    <None Include="Connected Services\BCCR\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Images\actualizar-flecha.png" />
+    <Content Include="Images\agregar-usuario %281%29.png" />
+    <Content Include="Images\agregar-usuario.png" />
+    <Content Include="Images\avatar-de-usuario grande.png" />
+    <Content Include="Images\avatar-de-usuario peq.png" />
+    <Content Include="Images\buscar %281%29.png" />
+    <Content Include="Images\cajero-automatico.png" />
+    <Content Include="Images\carrito-de-compras.png" />
+    <Content Include="Images\check.png" />
+    <Content Include="Images\cvc.png" />
+    <Content Include="Images\dolar.png" />
+    <Content Include="Images\eliminar.png" />
+    <Content Include="Images\etiqueta-de-descuento.png" />
+    <Content Include="Images\flecha-izquierda %281%29.png" />
+    <Content Include="Images\flecha-izquierda.png" />
+    <Content Include="Images\imagen color botones verde.png" />
+    <Content Include="Images\imagen color botones.png" />
+    <Content Include="Images\marcador.png" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\PAGOS.png" />
+    <Content Include="Images\PAGOSAAAA.png" />
+    <Content Include="Images\RRR.png" />
+    <Content Include="Images\subir.png" />
+    <Content Include="Images\tarjeta %281%29.png" />
+    <Content Include="Images\tarjeta.png" />
+    <Content Include="Images\visa.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xslt\factura.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\BCCR\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+  </Target>
+  <Import Project="..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+</Project>

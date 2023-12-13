@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="150" FechaEmision="4/12/2023 20:06:19" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Marie Curie" Identificación="2-5665-4654" Email="danii0399@hotmail.com" Celular="1231-2313" />
+  <Productos>
+    <Producto Producto="Arroz Cosecha Especial Tio Pelón 96% Grano Entero - 1,8kg" Cantidad="6" PrecioUnitario="3740" PrecioTotal="22440" />
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="3" PrecioUnitario="3650" PrecioTotal="10950" />
+    <Producto Producto="Azúcar Crudo Zukra - 2kg" Cantidad="3" PrecioUnitario="1820" PrecioTotal="5460" />
+    <Producto Producto="Café 1% Arábica - Orgánico Bajo Sombra - Café Britt - 340g" Cantidad="1" PrecioUnitario="5750" PrecioTotal="5750" />
+    <Producto Producto="Azúcar Blanco de Plantación Doña María - 5kg" Cantidad="1" PrecioUnitario="3240" PrecioTotal="3240" />
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <SubTotal>47840</SubTotal>
+    <Impuestos>1168,4</Impuestos>
+    <Descuentos>14352</Descuentos>
+    <Total>33488</Total>
+    <SubTotalUSD>90,2096847186604</SubTotalUSD>
+    <ImpuestosUSD>2,20319806909036</ImpuestosUSD>
+    <DescuentosUSD>27,0629054155981</DescuentosUSD>
+    <TotalUSD>63,1467793030623</TotalUSD>
+  </Productos>
+</MarketDesk>

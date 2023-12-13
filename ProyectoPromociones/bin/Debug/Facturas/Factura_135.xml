@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="135" FechaEmision="3/12/2023 07:49:32" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Maria Hernandez" Identificación="2-0888-0888" Email="mendez.daniela1199@gmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Alitas de Pollo Empacadas Don Cristobal, Precio por Kilo" Cantidad="3" PrecioUnitario="4340" PrecioTotal="13020" />
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="2" PrecioUnitario="1440" PrecioTotal="2880" />
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="2" PrecioUnitario="3650" PrecioTotal="7300" />
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="2" PrecioUnitario="1440" PrecioTotal="2880" />
+    <Producto Producto="Aceite Vegetal En su Punto - 450mL" Cantidad="1" PrecioUnitario="800" PrecioTotal="800" />
+    <Promociones>Por la compra de dos Arroz Luisiana te regalamos un Aceite Clover</Promociones>
+    <SubTotal>26880</SubTotal>
+    <Impuestos>1831,2</Impuestos>
+    <Descuentos>1440</Descuentos>
+    <Total>25440</Total>
+  </Productos>
+</MarketDesk>

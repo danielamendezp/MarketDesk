@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="136" FechaEmision="3/12/2023 11:22:44" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Sebastian Montero" Identificación="2-0759-0743" Email="danii0399@hotmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="2" PrecioUnitario="1440" PrecioTotal="2880" />
+    <Producto Producto="Aceite Vegetal En su Punto - 450mL" Cantidad="2" PrecioUnitario="800" PrecioTotal="1600" />
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="2" PrecioUnitario="3650" PrecioTotal="7300" />
+    <Promociones>Por la compra de dos Arroz Luisiana te regalamos un Aceite Clover</Promociones>
+    <SubTotal>11780</SubTotal>
+    <Impuestos>117,8</Impuestos>
+    <Descuentos>1440</Descuentos>
+    <Total>10340</Total>
+  </Productos>
+</MarketDesk>

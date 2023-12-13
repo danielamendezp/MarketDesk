@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="138" FechaEmision="3/12/2023 11:33:29" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Sebastian Montero" Identificación="2-0759-0743" Email="danii0399@hotmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Alitas de Pollo Empacadas Don Cristobal, Precio por Kilo" Cantidad="2" PrecioUnitario="4340" PrecioTotal="8680" />
+    <Promociones>Por una compra mayor a 50000 te aplicamos un 20% de descuento</Promociones>
+    <SubTotal>8680</SubTotal>
+    <Impuestos>1128,4</Impuestos>
+    <Descuentos>0</Descuentos>
+    <Total>8680</Total>
+  </Productos>
+</MarketDesk>

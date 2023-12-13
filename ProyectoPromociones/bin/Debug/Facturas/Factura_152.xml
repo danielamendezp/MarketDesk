@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="152" FechaEmision="4/12/2023 20:15:05" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Sebastian Montero" Identificación="2-0759-0743" Email="danii0399@hotmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Arroz Cosecha Especial Tio Pelón 96% Grano Entero - 1,8kg" Cantidad="6" PrecioUnitario="3740" PrecioTotal="22440" />
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <SubTotal>22440</SubTotal>
+    <Impuestos>224,4</Impuestos>
+    <Descuentos>6732</Descuentos>
+    <Total>15708</Total>
+    <SubTotalUSD>42,3140745210439</SubTotalUSD>
+    <ImpuestosUSD>0,423140745210439</ImpuestosUSD>
+    <DescuentosUSD>12,6942223563132</DescuentosUSD>
+    <TotalUSD>29,6198521647307</TotalUSD>
+  </Productos>
+</MarketDesk>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="145" FechaEmision="3/12/2023 15:20:11" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Daniela Mendez" Identificación="2-0789-0741" Email="danii0399@hotmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="2" PrecioUnitario="1440" PrecioTotal="2880" />
+    <Producto Producto="Arroz Clásico Enriquecido Luisiana 95% Grano Entero - 900g" Cantidad="2" PrecioUnitario="3650" PrecioTotal="7300" />
+    <Producto Producto="Azúcar Blanco de Plantación Doña María - 5kg" Cantidad="2" PrecioUnitario="3240" PrecioTotal="6480" />
+    <Producto Producto="Bandeja de Fresas" Cantidad="6" PrecioUnitario="1880" PrecioTotal="11280" />
+    <Producto Producto="Alitas de Pollo Empacadas Don Cristobal, Precio por Kilo" Cantidad="6" PrecioUnitario="4340" PrecioTotal="26040" />
+    <Promociones>Por una compra mayor a 50000 te aplicamos un 20% de descuento</Promociones>
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <Promociones>Por la compra de dos Arroz Luisiana te regalamos un Aceite Clover</Promociones>
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <Promociones>Por una compra mayor a 50000 te aplicamos un 20% de descuento</Promociones>
+    <Promociones>Por una compra mayor a 50000 te aplicamos un 20% de descuento</Promociones>
+    <Promociones>Por una compra mayor a 50000 te aplicamos un 20% de descuento</Promociones>
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <Promociones>Por la compra de dos Arroz Luisiana te regalamos un Aceite Clover</Promociones>
+    <SubTotal>53980</SubTotal>
+    <Impuestos>5018,2</Impuestos>
+    <Descuentos>1440</Descuentos>
+    <Total>52540</Total>
+  </Productos>
+</MarketDesk>

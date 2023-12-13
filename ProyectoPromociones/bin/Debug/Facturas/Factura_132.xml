@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="F:\Programacion III\Proyecto\ProyectoPromociones\ProyectoPromociones\bin\Debug\Xslt\factura.xslt"?>
+<MarketDesk>
+  <DatosFacturacion NumeroFactura="132" FechaEmision="2/12/2023 08:36:41" />
+  <Negocio Negocio="La pulpe" CedulaJuridica="2-0789-0745" />
+  <Cliente Nombre="Daniela Mendez" Identificación="2-0789-0741" Email="danii0399@hotmail.com" Celular="8848-4854" />
+  <Productos>
+    <Producto Producto="Aceite De Soya Clover -  900mL" Cantidad="8" PrecioUnitario="1440" PrecioTotal="11520" />
+    <Promociones>Por la compra de dos Arroz Luisiana te hacemos un 30% de descuento </Promociones>
+    <SubTotal>11520</SubTotal>
+    <Impuestos>115,2</Impuestos>
+    <Descuentos>3456</Descuentos>
+    <Total>8064</Total>
+  </Productos>
+</MarketDesk>
